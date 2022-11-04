@@ -1,29 +1,19 @@
 import React from 'react';
 import { Routes, Route } from 'react-router-dom';
 
-import Navs from './components/Navs';
 import Home from './pages/Home';
 import Starred from './pages/Starred';
 
 function App() {
   return (
-    <div>
-      <Navs />
-
-      <Routes>
-        <Route exact path="/">
-          <Home />
-        </Route>
-
-        <Route exact path="/starred">
-          <Starred />
-        </Route>
-
-        <Route>
+    <Routes>
+      <Route exact path="/" element={<Home />} />
+      <Route exact path="/starred" element={<Starred />} />
+      {/* <Route path="*" element={<PageNotFound />} /> */}
+      {/* <Route>
           <div>Not Found</div>
-        </Route>
-      </Routes>
-    </div>
+        </Route> */}
+    </Routes>
   );
 }
 

@@ -20,6 +20,8 @@ function Navs() {
   );
 }
 
+export default Navs;
+
 // const Navs = () => {
 //     return (
 //       <div>
@@ -31,5 +33,3 @@ function Navs() {
 //       </div>
 //     );
 //   };
-
-export default Navs;

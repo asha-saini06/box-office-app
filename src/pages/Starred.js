@@ -1,9 +1,8 @@
-/* eslint-disable arrow-body-style */
-/* eslint-disable react/function-component-definition */
 import React from 'react';
+import MainPageLayout from '../components/MainPageLayout';
 
-const Starred = () => {
-  return <div>This is Starred</div>;
-};
+function Starred() {
+  return <MainPageLayout>This is Starred</MainPageLayout>;
+}
 
 export default Starred;
