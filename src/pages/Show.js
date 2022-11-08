@@ -76,7 +76,7 @@ function Show() {
         name={show.name}
         rating={show.rating}
         summary={show.summary}
-        tags={show.genre}
+        tags={show.genres}
       />
 
       <InfoBlock>
