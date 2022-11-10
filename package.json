@@ -19,15 +19,15 @@
   },
   "scripts": {
     "start": "react-scripts start",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "build": "npm run clear && react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "lint": "eslint src/**/*.js",
     "format": "prettier --write src/**/*.js",
     "format:lint": "npm run format && npm run lint",
-    "clear": "rimraf build",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "clear": "rimraf build"
   },
   "eslintConfig": {
     "extends": [
